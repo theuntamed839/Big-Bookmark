@@ -75,7 +75,7 @@ while True:
         urls = retrive_urls(driver)
         driver.set_window_size(1000,20)
         if new_bookmark:
-            choice =  input("enter a name to save the bookmark or type 'q' to quit without saving  ")
+            choice =  input("enter a name to save the bookmark or type 'q' to quit without saving ")
             if choice.strip() != "N":
                 save(choice.strip(), urls);  # case 1
         else:
@@ -83,7 +83,7 @@ while True:
             if choice.strip() == "1":
                 save(args.bookmark_name, urls);   # case 2
             if choice.strip() == "2":
-                save(input("enter name to save bookmark").strip(), urls);  # case 3
+                save(input("enter name to save bookmark ").strip(), urls);  # case 3
 
         driver.quit()
         break
